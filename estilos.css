@@ -2,10 +2,11 @@
     list-style: none;
     padding: 0;
     background: aquamarine;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin:auto; 
-    
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bold;
 }
 .menu li a {
     text-decoration: none;
@@ -23,3 +24,58 @@
 .acaEstoy {
     background-color: mediumseagreen;
 }
+#presentacion {
+    font-family: 'Itim', cursive;
+    font-size: 35px; 
+    font-weight: bold;
+    text-align: center;
+}
+img {
+    
+    display: block;     /**display y margin asi para que quede la imagen en el medio */
+    margin: auto;
+    width: 250px;;
+    height:250px;
+    border-radius:150px;
+}
+
+.cuerpo {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    list-style: none;
+    padding: 0px;
+    background: rgb(219, 243, 235);
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+}
+.cuerpo p {
+    padding: 15px;
+}
+.formulario {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+  }
+  
+  .formulario input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+  }
+  
+  .formulario button {
+    padding: 0.5em 1em;
+    border: none;
+    background: mediumseagreen;
+    cursor: pointer;
+  }
+  #mensaje {
+    width: 90%;
+    height: 100px;
+    margin: 0.5rem;
+  }

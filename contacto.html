@@ -7,33 +7,36 @@
     <title>CV Ana Barret</title>
     <link rel="icon" type="image/x-icon" href="/fotoPerfil.jpg">
     <link rel="stylesheet" type="text/css" href="/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Hind+Siliguri" rel="stylesheet">
 </head>
 <body>
     <header>
         <ul class="menu">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/infoPersonal.html">Informacion personal</a></li>
-            <li><a href="/experiencia.html">Experiencia</a></li>
-            <li><a href="/estudios.html">Estudios</a></li>
-            <li><a href="/habilidades.html">Habilidades</a></li>
-            <li><a class ="acaEstoy" href="/contacto.html">Contacto</a></li>
+            <li><a href="/index.html">INICIO</a></li>
+            <li><a href="/infoPersonal.html">DATOS PERSONALES</a></li>
+            <li><a href="/experiencia.html">EXPERIENCIA</a></li>
+            <li><a href="/estudios.html">ESTUDIOS</a></li>
+            <li><a href="/habilidades.html">HABILIDADES</a></li>
+            <li><a class ="acaEstoy" href="/contacto.html">CONTACTO</a></li>
         </ul>  
     </header>
-    <div>
+    <div class="cuerpo">
         <h3>Para contactarme:</h3>
         <ul>
             <li>Celular: 3564 - 457833</li>
             <li>Email: anabarret@gmail.com</li>
         </ul>    
         <h3>Sino completa el formulario y me pondre en contacto:</h3>
-        <form action="" method="post">
+        <form action="" method="post" class="formulario">
             <label for="">Nombre de la empresa</label>
             <input type="text" placeholder="Ingrese el nombre de la empresa" size="50" required="required">
             <label for="">Correo electronico</label>
             <input type="text" placeholder="Ingrese el correo electronico" size="50" required="required" type="email">
             <label for="">Mensaje</label>
-            <input type="text" placeholder="Ingrese el mensaje" size="500" required="required">
-            <input type="submit" value="Enviar">
+            <input id="mensaje" type="text" placeholder="Ingrese el mensaje" required="required">
+            <button type="submit">Enviar</button>
         </form>
     </div>
     <footer> 
