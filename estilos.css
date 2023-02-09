@@ -1,55 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background: rgb(243, 199, 207);
+    height: 70px;
+}
+.ancho{
+    width: 80%;
+    height: 70px;
+    margin:auto; 
+}
+.logo{
+    width: 30%;        /** Que ocupe el 30% de lo que estableci como ancho */ 
+    height: 70px;
+    float: left;     /** Por defecto CSS pone las cajitas una abajo de la otra, con esto le digo que se vaya lo mas a la 
+                        izquierda posible dentro de los parametros que estableci en ancho (esta tomando el 80% del header 
+                        y contiene al logo y al nav)  */
+}
+.logo p a{
+    text-decoration: none;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bold;
+    color: rgb(243, 89, 173);
+    font-size: 40px;
+    padding-top: 10px;
+    box-sizing: border-box;   /** Para que no se me agrande el contenedor, lo fuerzo a que ocupe el ancho del contenedor */
+    letter-spacing: 1px;
+}
+
 .menu {
     list-style: none;
-    padding: 0;
-    background: aquamarine;
-    width: 100%;
-    max-width: 1000px;
+    padding: 0px;
+    background: rgb(243, 199, 207);
+    width: 70%;                 /** Que ocupe el 70% de lo que estableci como ancho */
+    height: 70px;
     margin:auto; 
     font-family: 'Hind Siliguri', sans-serif;
     font-weight: bold;
+    float: left;     /** Tamb lo pongo a la izquierda, para que se posicione al lado de la otra */
+    text-align: right;     /**Para que el menu se vaya a la derecha */
+    padding-top: 24;
+    box-sizing: border-box;
 }
 .menu li a {
     text-decoration: none;
-    color:black; 
-    padding: 20px;
+    color:rgb(89, 88, 88); 
+    padding: 22px;
     display: block;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 .menu li {
     display: inline-block;  /** Pone los elementos de la lista uno al lado del otro */
     text-align: center;
 }
-.menu li a:hover {
-    background: mediumseagreen;     /** Paso mouse por arriba y cambia el color */
+.menu ul li a:hover {
+    background-color:rgb(243, 89, 173);    /** Paso mouse por arriba y cambia el color */
 }
 .acaEstoy {
-    background-color: mediumseagreen;
+    background-color:rgb(243, 89, 173); 
 }
 #presentacion {
     font-family: 'Itim', cursive;
     font-size: 35px; 
     font-weight: bold;
     text-align: center;
+    color:rgb(89, 88, 88);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 img {
-    
     display: block;     /**display y margin asi para que quede la imagen en el medio */
     margin: auto;
     width: 250px;;
     height:250px;
-    border-radius:150px;
+    border-radius:50%;
+    background-size: cover;
+    margin-bottom: 20px;
 }
 
 .cuerpo {
+    color:rgb(89, 88, 88);
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 18px;
     list-style: none;
-    padding: 0px;
-    background: rgb(219, 243, 235);
+    padding-top: 10px;
+    background: rgb(243, 199, 207);
     width: 100%;
     max-width: 1000px;
     margin:auto;
+    width: 100%;
+
 }
 .cuerpo p {
+    padding: 15px;
+}
+.cuerpo ul li {
+    padding: 15px;
+    padding-left: 40px;
+    list-style: none;
+}
+.cuerpo h3 {
     padding: 15px;
 }
 .formulario {
@@ -60,6 +114,7 @@ img {
     flex-direction: column;
     justify-content: left;
     align-items: left;
+    padding-bottom: 30px;
   }
   
   .formulario input {
@@ -69,13 +124,25 @@ img {
   }
   
   .formulario button {
-    padding: 0.5em 1em;
+    padding: 0.5em 1em; 
     border: none;
-    background: mediumseagreen;
+    background-color:rgb(243, 89, 173); 
     cursor: pointer;
+    width: 60px;
+    height: 40px;
+    
   }
   #mensaje {
     width: 90%;
     height: 100px;
     margin: 0.5rem;
   }
+.encabezado {
+    font-family: 'Itim', cursive;
+    font-size: 35px; 
+    font-weight: bold;
+    text-align: center;
+    color:rgb(89, 88, 88);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
