@@ -119,6 +119,7 @@ img {
     width: 90%;
     height: 30px;
     margin: 0.5rem;
+    font-family: 'Hind Siliguri', sans-serif;
 }
   
 .formulario button {
@@ -133,6 +134,7 @@ img {
     width: 90%;
     height: 100px;
     margin: 0.5rem;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 .encabezado {
     font-family: 'Itim', cursive;

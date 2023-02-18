@@ -38,16 +38,17 @@
         <ul>
             <li><i class="fa-solid fa-phone"></i> Celular: 3564 - 457833</li>
             <li><i class="fa-solid fa-envelope"></i> Email: anabarret@gmail.com</li>
-        </ul>    
+        </ul>   
+        <script src="/formulario.js"></script> 
         <h3>Podes dejarme tu consulta:</h3>
-        <form action="" method="post" class="formulario">
+        <form action="#" method="post" class="formulario" name="formulario">
             <label for="">Nombre de la empresa</label>
-            <input type="text" placeholder= "Ingrese el nombre de la empresa" size="50" required="required">
+            <input name="nombre" type="text" placeholder= "Ingrese el nombre de la empresa" size="50" required="required">
             <label for="">Correo electronico</label>
-            <input type="text" placeholder= "Ingrese el correo electronico" size="50" required="required" type="email">
+            <input name="email" type="text" placeholder= "Ingrese el correo electronico" size="50" required="required" type="email">
             <label for="">Mensaje</label>
-            <input id="mensaje" type="text" placeholder= "Ingrese el mensaje" required="required">
-            <button type="submit">Enviar</button>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder= "Ingrese el mensaje" required="required"></textarea>
+            <button onclick="validarFormulario();" type="submit">Enviar</button>
         </form>
     </div>
     <footer> 
