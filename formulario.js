@@ -8,17 +8,18 @@ function validarFormulario() {
         return false; 
     }
     if (formulario.email.value == 0) {
-        alert("Debe completar todos los campos");
         formulario.email.value = ""; 
         formulario.email.focus(); 
         return false; 
     }
     if (formulario.mensaje.value == 0) {
-        alert("Debe completar todos los campos");
         formulario.mensaje.value = ""; 
         formulario.mensaje.focus(); 
         return false; 
     }
-    alert("Mensaje enviado exitosamente"); 
+        
     formulario.submit(); 
 }
+
+  const validarForm = document.getElementById("validarFormulario");
+  validarForm.addEventListener("click", validarFormulario);
